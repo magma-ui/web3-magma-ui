@@ -1,9 +1,4 @@
-Here's a clean markdown version for your GitHub README.md:
-
-# Project Title
-
-## Introduction
-Welcome to the **Project Title** repository! This project is built using **Bun** and **Next.js**. Follow the instructions below to get started, run the project, and troubleshoot any issues you may encounter.
+# Magma-UI
 
 ## Table of Contents
 - [Checking for Bun](#checking-for-bun)
@@ -41,15 +36,13 @@ Once Bun is installed, you can run the project by following these steps:
 1. **Clone the Repository**: First, clone the repository using Git:
 
 ```bash
-git clone https://github.com/username/repo-name.git
+git clone https://github.com/magma-ui/web3-magma-ui/
 ```
-
-Replace `username` and `repo-name` with the actual username and repository name.
 
 2. **Navigate to the Project Directory**: Change into the cloned project directory:
 
 ```bash
-cd repo-name
+cd web3-magma-ui
 ```
 
 3. **Install Project Dependencies**: Run the following command to install the required dependencies:
@@ -82,6 +75,3 @@ Replace `/path/to/your/cloned-repo` with the actual path.
 3. **Dependencies Not Installing**: If `bun install` fails, make sure you have an internet connection. If the issue persists, delete the `bun.lockb` file and the `node_modules` directory (if it exists) and run `bun install` again.
 
 4. **General Issues**: If you encounter any other issues, refer to the Bun documentation for more help or check the issues tab in this repository to see if your problem has been addressed.
-
-## Conclusion
-Thank you for using this repository! If you have any questions or run into problems not covered here, feel free to open an issue in this GitHub repository.
