@@ -1,53 +1,87 @@
-# Next.js & NextUI Template
+Here's a clean markdown version for your GitHub README.md:
 
-This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).
+# Project Title
 
-[Try it on CodeSandbox](https://githubbox.com/nextui-org/next-app-template)
+## Introduction
+Welcome to the **Project Title** repository! This project is built using **Bun** and **Next.js**. Follow the instructions below to get started, run the project, and troubleshoot any issues you may encounter.
 
-## Technologies Used
+## Table of Contents
+- [Checking for Bun](#checking-for-bun)
+- [Installing Bun](#installing-bun)
+- [Running the Project](#running-the-project)
+- [Troubleshooting](#troubleshooting)
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
-
-## How to Use
-
-### Use the template with create-next-app
-
-To create a new project based on this template using `create-next-app`, run the following command:
+## Checking for Bun
+To check if you already have Bun installed on your system, open your terminal and run:
 
 ```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
+bun --version
 ```
 
-### Install dependencies
+If Bun is installed, this command will display the installed version. If you receive an error message stating that the command is not found, proceed to the installation section below.
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+## Installing Bun
+If you need to install Bun, you can do so easily with the following command:
 
 ```bash
-npm install
+curl -fsSL https://bun.sh/install | bash
 ```
 
-### Run the development server
+This command will download and install Bun. Once the installation is complete, make sure to add Bun to your `PATH` by adding the following line to your shell configuration file (`.bashrc`, `.zshrc`, or `.profile`):
 
 ```bash
-npm run dev
+export PATH="$HOME/.bun/bin:$PATH"
 ```
 
-### Setup pnpm (optional)
+After adding this line, run `source ~/.bashrc` or `source ~/.zshrc` to apply the changes.
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+## Running the Project
+Once Bun is installed, you can run the project by following these steps:
+
+1. **Clone the Repository**: First, clone the repository using Git:
 
 ```bash
-public-hoist-pattern[]=*@nextui-org/*
+git clone https://github.com/username/repo-name.git
 ```
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+Replace `username` and `repo-name` with the actual username and repository name.
 
-## License
+2. **Navigate to the Project Directory**: Change into the cloned project directory:
 
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+```bash
+cd repo-name
+```
+
+3. **Install Project Dependencies**: Run the following command to install the required dependencies:
+
+```bash
+bun install
+```
+
+4. **Start the Development Server**: Now you can run the development server:
+
+```bash
+bun run dev
+```
+
+The server should start, and you can access the application at `http://localhost:3000`.
+
+## Troubleshooting
+If you encounter issues while running the project, consider the following common problems:
+
+1. **Permission Denied Errors**: If you receive a `permission denied` error, it may be due to file permission issues. To fix this, change ownership of the project directory:
+
+```bash
+sudo chown -R $(whoami) /path/to/your/cloned-repo
+```
+
+Replace `/path/to/your/cloned-repo` with the actual path.
+
+2. **Bun Command Not Found**: If you get an error indicating that `bun` is not recognized, ensure you have added it to your `PATH` correctly and that your terminal session is refreshed.
+
+3. **Dependencies Not Installing**: If `bun install` fails, make sure you have an internet connection. If the issue persists, delete the `bun.lockb` file and the `node_modules` directory (if it exists) and run `bun install` again.
+
+4. **General Issues**: If you encounter any other issues, refer to the Bun documentation for more help or check the issues tab in this repository to see if your problem has been addressed.
+
+## Conclusion
+Thank you for using this repository! If you have any questions or run into problems not covered here, feel free to open an issue in this GitHub repository.
