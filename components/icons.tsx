@@ -15,14 +15,16 @@ export const Logo: React.FC<IconSvgProps> = ({
     width={size || width}
     {...props}
   >
+    <circle cx="16" cy="16" r="15" stroke="currentColor" strokeWidth="1" fill="none" />
     <path
-      clipRule="evenodd"
-      d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
+      d="M9 23 L16 9 L23 23 L20 23 L16 16 L12 23 Z"
       fill="currentColor"
-      fillRule="evenodd"
     />
+    <circle cx="24" cy="11" r="1.5" fill="currentColor" />
   </svg>
 );
+
+
 
 export const DiscordIcon: React.FC<IconSvgProps> = ({
   size = 24,

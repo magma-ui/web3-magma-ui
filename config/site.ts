@@ -1,12 +1,12 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "MagmaUI",
+  description: "Your Dedicated UI partner for web3",
   navItems: [
     {
-      label: "Home",
-      href: "/",
+      label: "Components",
+      href: "/user-components",
     },
     {
       label: "Docs",
@@ -60,10 +60,10 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com/magma-ui/web3-magma-ui",
+    twitter: "https://twitter.com/",
+    docs: "/docs",
+    discord: "https://discord.gg/",
+    sponsor: "https://patreon.com/",
   },
 };
