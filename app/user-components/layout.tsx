@@ -1,14 +1,23 @@
-export default function ComponentsLayout({
-    children,
-  }: {
-    children: React.ReactNode;
-  }) {
-    return (
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-lg text-center justify-center">
-          {children}
-        </div>
-      </section>
-    );
-  }
-  
+import Sidebar from "@/components/sidebar";
+import React, { ReactElement } from "react";
+import { cn } from "@/lib/utils";
+
+interface ComponentsLayoutProps {
+  children: React.ReactNode;
+}
+
+export default function ComponentsLayout({ children }: ComponentsLayoutProps) {
+  return (
+    <Sidebar>
+      {React.Children.map(children, (child) => {
+        if (React.isValidElement(child)) {
+          // Ensure that the child accepts `className`
+          return React.cloneElement(child as ReactElement<{ className?: string }>, {
+            className: cn(child.props.className, "w-full") as React.HTMLAttributes<HTMLElement>["className"],
+          });
+        }
+        return child;
+      })}
+    </Sidebar>
+  );
+}

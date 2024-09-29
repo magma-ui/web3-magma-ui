@@ -1,13 +1,12 @@
 import { title } from "@/components/primitives";
+import React from "react";
 
 export default function userComponentsPage() {
   return (
-    <div>
-      <h1 className={title()}>Components : </h1>
-      <p>
-        All the components will be here with a sidebar and all information , a
-        good layout like shadcn
-      </p>
+    <div className="space-y-4">
+      <h1 className="text-2xl font-bold">Topic Title</h1>
+      <p>This is the content for this topic.</p>
+      {/* Add more content as needed */}
     </div>
-  );
+  )
 }
