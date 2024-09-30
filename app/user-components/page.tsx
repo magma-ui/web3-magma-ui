@@ -10,10 +10,8 @@ import {
 
 export default function userComponentsPage() {
   return (
-    <ResizablePanelGroup direction="horizontal">
-      <ResizablePanel maxSize={25} className="p-40 bg-white text-black">One</ResizablePanel>
-      <ResizableHandle withHandle />
-      <ResizablePanel className="p-40 bg-black text-white">Two</ResizablePanel>
-    </ResizablePanelGroup>
+    <div>
+      Hello World
+    </div>
   )
 }
