@@ -1,12 +1,19 @@
 import { title } from "@/components/primitives";
 import React from "react";
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "@/components/ui/resizable"
+
+
 
 export default function userComponentsPage() {
   return (
-    <div className="space-y-4">
-      <h1 className="text-2xl font-bold">Topic Title</h1>
-      <p>This is the content for this topic.</p>
-      {/* Add more content as needed */}
-    </div>
+    <ResizablePanelGroup direction="horizontal">
+      <ResizablePanel maxSize={25} className="p-40 bg-white text-black">One</ResizablePanel>
+      <ResizableHandle withHandle />
+      <ResizablePanel className="p-40 bg-black text-white">Two</ResizablePanel>
+    </ResizablePanelGroup>
   )
 }
