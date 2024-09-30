@@ -1,17 +1,13 @@
-import { title } from "@/components/primitives";
 import React from "react";
-import {
-  ResizableHandle,
-  ResizablePanel,
-  ResizablePanelGroup,
-} from "@/components/ui/resizable"
-
-
-
-export default function userComponentsPage() {
+export default function UserComponentsPage() {
   return (
+<<<<<<< HEAD
+<>
+This is a test</>
+=======
     <div>
       Hello World
     </div>
+>>>>>>> upstream/main
   )
 }
